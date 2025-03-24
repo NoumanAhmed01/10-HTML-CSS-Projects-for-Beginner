@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.apply_box {
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 4px 3px 5px rgb(1, 1, 1);
+}
+small {
+  font-size: 20px;
+  font-weight: 500;
+  color: blueviolet;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+input,
+textarea,
+select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.btn-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+button {
+  padding: 10px 15px;
+  background-color: red;
+  color: white;
+  border: transparent solid 2px;
+  border-radius: 4px;
+  transition: 0.3s ease-in;
+  margin-bottom: 10px;
+}
+button:hover {
+  background-color: #ccc;
+  border: 2px solid red;
+  color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+input,
+textarea,
+select:focus {
+  outline-color: red;
+}
+
+.textarea-control {
+  grid-column: 1 / span 2;
+}
+.textarea-control textarea {
+  width: 100%;
+}
+@media (max-width: 460px) {
+  .textarea-control {
+    grid-column: 1 / span 1;
+  }
+}
